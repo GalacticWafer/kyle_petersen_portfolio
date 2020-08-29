@@ -33,6 +33,7 @@ body {
 	line-height: 1;
 }
 
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -104,6 +105,26 @@ input, select, textarea {
 		}
 
 	}
+
+	span.icon {
+		transition: 400ms;
+	}
+
+	span.icon:hover {
+		transform: scale(1.15);
+		transition: 400ms;
+		background-color: rgba(255, 255, 255, 0.15);
+	}
+
+	.button {
+		transition: 400ms;
+	}
+
+	.button:hover {
+		transform: scale(1.05);
+		transition: 400ms;
+	}
+
 
 	html {
 		box-sizing: border-box;
@@ -210,6 +231,18 @@ input, select, textarea {
 			letter-spacing: 0.1em;
 			margin: 0 0 2em 0;
 			text-transform: uppercase;
+		}
+
+		a#projects.button {
+			position: relative;
+			left: 50vw;
+			top: 3vh;
+		}
+
+		a#blogs.button {
+			position: relative;
+			top: 5vh;
+			right: 24vh;
 		}
 
 			a.special:not(.button):before {
@@ -2431,6 +2464,7 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		background-color: #181818;
 	}
 
 		.image img {
@@ -3015,20 +3049,34 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+		justify-content: space-evenly;
 		margin: 0 0 2em 0;
+		margin: 0 auto;
+		width: 95vw;
+		margin-left: -15vw;
 	}
-
 		.features article {
 			padding: 1.75em 1.75em 0.1em 1.75em ;
 			background-color: #252525;
 			border-radius: 5px;
-			margin: 1.5em 3em 1.5em 0;
-			width: calc(50% - 1.5em);
+			margin: 1.5em 1.5em 1.5em 1.5em;
+			width: calc(30% - 1.5em);
+			box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+			transition: 400ms;
 		}
 
-			.features article:nth-child(2n) {
-				margin-right: 0;
-			}
+		.features article:hover {
+			transform: scale(1.05);
+			transition: 400ms;
+		}
+
+		article.blog{
+			padding: 1.75em 1.75em 0.1em 1.75em ;
+			background-color: #151515;
+			border-radius: 5px;
+			margin: 1.5em 1.5em 1.5em 1.5em;
+			width: calc(30% - 1.5em);
+		}
 
 			.features article .image {
 				border-radius: 5px 5px 0 0;
@@ -3069,6 +3117,17 @@ input, select, textarea {
 					width: calc(100% + 3em);
 				}
 
+				div.list-skills {
+					font-size: .6em;
+					margin-right: 2em;
+				}
+
+				div.list-skills:last-child {
+					font-size: .6em;
+					margin-left: 2em;
+				}
+
+
 		}
 
 		@media screen and (max-width: 480px) {
@@ -3079,8 +3138,21 @@ input, select, textarea {
 
 				.features article {
 					width: 100%;
-					margin: 0 0 2em 0 !important;
+					margin: 0 0 2em 9vw !important;
 				}
+
+				
+		a#projects.button {
+			position: relative;
+			left: 0vw;
+			top: 0vh;
+		}
+
+		a#blogs.button {
+			position: relative;
+			right: 0vh;
+			top: 0vh;
+		}
 
 		}
 
@@ -3393,7 +3465,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		padding: 10em 0 4.75em 0 ;
+		padding: 35vh 0 4.75em 0 ;
 	}
 
 		#banner .inner {
@@ -3481,7 +3553,7 @@ input, select, textarea {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #151515;
-				background-image: linear-gradient(to top, rgba(165, 167, 179, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), #212121c5), url("../../images/bg.jpg");
 				background-size: auto,
  cover;
 				background-position: center,
@@ -3593,7 +3665,7 @@ input, select, textarea {
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #151515;
-			background-image: linear-gradient(to top, rgba(165, 167, 179, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), #212121c5), url("../../images/bg.jpg");
 			background-size: auto,
  cover;
 			background-position: center,
@@ -4086,7 +4158,7 @@ input, select, textarea {
 
 		#footer {
 			background-color: #151515;
-			background-image: linear-gradient(to top, rgba(129, 130, 133, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), #212121c5), url("../../images/bg.jpg");
 			background-size: auto,
  cover;
 			background-position: center,
