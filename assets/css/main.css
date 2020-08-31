@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	overflow-x: hidden;
 }
 
 
@@ -175,11 +176,19 @@ input, select, textarea {
 		line-height: 1.65;
 	}
 
+
+	div#skill-list.list-skills{
+
+		width: 55vw;
+
+	}
+
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
 				font-size: 13pt;
 			}
+
 
 		}
 
@@ -204,6 +213,12 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
+
+			div#skill-list.list-skills {
+				width: 75vw;
+				justify-content: space-evenly;
+			}
+	
 
 		}
 
@@ -4249,4 +4264,41 @@ input, select, textarea {
 			padding: 2em 1.5em 0.1em 1.5em ;
 		}
 
+	}
+
+	/* Side Bar */
+	
+	@media screen and (min-width: 720px) {	
+
+		.sidebar {
+			right: 1vw;
+			position: fixed;
+			top: 35vh;
+			z-index: 1;
+		}
+
+		.dot li {
+			margin-top: 1vh;
+			cursor: pointer;
+			font-size:  2rem;
+			transition: 200ms;
+			text-align: right;
+ 			direction: rtl;
+		}
+		
+		.dot li:hover {
+			transition: 200ms;
+			color: grey;
+		}
+
+		.dot-text {
+			position: relative;
+			left: 1000px;
+			transition: 400ms;
+		}
+
+		.dot li:hover .dot-text {
+			left: 0;
+			transition: 400ms;
+		}
 	}
