@@ -28,4 +28,4 @@ function getOffset(el) {
       left: rect.left + window.scrollX,
       top: rect.top + window.scrollY
     };
-  }
+}
