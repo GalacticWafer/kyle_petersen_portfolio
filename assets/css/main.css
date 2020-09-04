@@ -3084,7 +3084,7 @@ input, select, textarea {
 			background-color: #252525;
 			border-radius: 5px;
 			margin: 1.5em 1.5em 1.5em 1.5em;
-			width: calc(30% - 1.5em);
+			width: calc(27% - 1.5em);
 			box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
 			transition: 400ms;
 		}
@@ -3099,7 +3099,7 @@ input, select, textarea {
 			background-color: #151515;
 			border-radius: 5px;
 			margin: 1.5em 1.5em 1.5em 1.5em;
-			width: calc(30% - 1.5em);
+			width: calc(27% - 1.5em);
 		}
 
 			.features article .image {
