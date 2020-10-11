@@ -3690,10 +3690,8 @@ input, select, textarea {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #151515;
 			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), #212121c5), url("../../images/bg.jpg");
-			background-size: auto,
- cover;
-			background-position: center,
- 0% 30%;
+			background-size: auto,cover;
+			background-position: center, 0% 30%;
 			margin-bottom: -6.5em;
 		}
 
