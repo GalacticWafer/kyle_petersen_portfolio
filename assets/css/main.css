@@ -35,6 +35,20 @@ body {
 }
 
 
+section#one {
+	height: 90vh;
+}
+
+@media screen and (max-width: 480px) {
+
+	section#one {
+		height: 120vh;
+	}
+
+}
+
+
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -195,13 +209,6 @@ input, select, textarea {
 		line-height: 1.65;
 	}
 
-
-	div#skill-list.list-skills{
-
-		width: 55vw;
-
-	}
-
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
@@ -232,13 +239,7 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
-
-			div#skill-list.list-skills {
-				width: 75vw;
-				justify-content: space-evenly;
-			}
 	
-
 		}
 
 		@media screen and (max-width: 480px) {
@@ -278,14 +279,13 @@ input, select, textarea {
 
 		a#projects.button {
 			position: relative;
-			left: 50vw;
+			left: 64vw;
 			top: 3vh;
 		}
 
 		a#blogs.button {
 			position: relative;
 			top: 5vh;
-			right: 24vh;
 		}
 
 			a.special:not(.button):before {
@@ -3093,19 +3093,20 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
-		margin: 0 0 2em 0;
-		margin: 0 auto;
-		width: 95vw;
-		margin-left: -15vw;
+		width: 100%;
 	}
 		.features article {
 			padding: 1.75em 1.75em 0.1em 1.75em ;
 			background-color: #252525;
 			border-radius: 5px;
 			margin: 1.5em 1.5em 1.5em 1.5em;
-			width: calc(27% - 1.5em);
+			width: calc(23% - 1.5em);
 			box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
 			transition: 400ms;
+		}
+
+		.features h2 {
+			font-size: 1vw;
 		}
 
 		.features article:hover {
@@ -3118,7 +3119,7 @@ input, select, textarea {
 			background-color: #131313;
 			border-radius: 5px;
 			margin: 1.5em 1.5em 1.5em 1.5em;
-			width: calc(27% - 1.5em);
+			width: calc(25% - 1.5em);
 		}
 
 			.features article .image {
@@ -3143,15 +3144,23 @@ input, select, textarea {
 				width: calc(50% - 1em);
 			}
 
+			.features h2 {
+				font-size: 100%;
+			}
+
+
 		}
 
 		@media screen and (max-width: 736px) {
 
-			.features article {
-				padding: 1.5em 1.5em 0.1em 1.5em ;
-				margin: 0.875em 1.75em 0.875em 0;
-				width: calc(50% - 0.875em - 1px);
+			.features {
+				display: block;
 			}
+
+				.features article {
+					width: 100%;
+				}
+
 
 				.features article .image {
 					margin-bottom: 1.5em;
@@ -3170,19 +3179,23 @@ input, select, textarea {
 					margin-left: 2em;
 				}
 
+				a#projects.button {
+					position: relative;
+					left: 0vw;
+					top: 0vh;
+				}
+
+				
+			a#blogs.button {
+				position: relative;
+				right: 0vh;
+				top: 0vh;
+			}
 
 		}
 
 		@media screen and (max-width: 480px) {
 
-			.features {
-				display: block;
-			}
-
-				.features article {
-					width: 100%;
-					margin: 0 0 2em 9vw !important;
-				}
 
 				
 		a#projects.button {
@@ -3508,7 +3521,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		padding: 35vh 0 4.75em 0 ;
+		padding: 35vh 0 6.75em 0 ;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -3596,7 +3609,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				padding: 7em 0 8.25em 0 ;
+				padding: 20em 0 20.25em 0 ;
 				background-size: auto, cover;
 				background-position: center, center;
 				margin-bottom: -6.5em;
@@ -3607,7 +3620,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 12em 3em 12.375em 3em ;
+				padding: 20em 3em 20.375em 3em ;
 				margin-bottom: -4.75em;
 			}
 
@@ -3620,7 +3633,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 5em 2em 4.25em 2em ;
+				padding: 25em 2em 15.25em 2em ;
 				margin-bottom: -2.5em;
 			}
 
@@ -3801,6 +3814,12 @@ input, select, textarea {
 		}
 
 		.wrapper .inner {
+			padding: 3em 0 1em 0 ;
+			margin: 0 auto;
+			width: 90%;
+		}
+
+		.wrapper .inner2 {
 			padding: 3em 0 1em 0 ;
 			margin: 0 auto;
 			width: 55em;
@@ -4040,6 +4059,11 @@ input, select, textarea {
 				}
 
 				.wrapper .inner {
+					padding: 3em 3em 1em 3em ;
+					width: 100%;
+				}
+
+				.wrapper .inner2 {
 					padding: 3em 3em 1em 3em ;
 					width: 100%;
 				}
